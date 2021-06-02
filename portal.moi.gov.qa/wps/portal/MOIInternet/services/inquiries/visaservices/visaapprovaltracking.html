@@ -982,7 +982,63 @@ $.fn.Setup_ARIA_Navigation = function(settings) {
  		<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel"><span lang="en" dir="ltr">Web Content Viewer (JSR 286)</span></span>
 	</span>
     <div class="wpthemeOverflowAuto"> <!-- lm:control dynamic spot injects markup of layout control -->
+        
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
 			<style>.inner-brand.pad07 img {height: 75px;width: 70px;}</style>
 <div class="containerBox pad05 deptbannerdiv">
 <div class="innerbannerdiv">
@@ -1038,6 +1094,63 @@ $.fn.Setup_ARIA_Navigation = function(settings) {
 	</span>
     <div class="wpthemeOverflowAuto"> <!-- lm:control dynamic spot injects markup of layout control -->
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		    
+		
+	
+	
+	
+	       		           
+    
+			     	
+    
+    
+
+
+    
+    
+	
+	
+		
+			
+			
 
 
 <style>
@@ -1582,7 +1695,6 @@ $(document).ready(function(){
 </script>
 
 
-
 <script>
 function myfunction()
 {
@@ -1592,7 +1704,7 @@ var z = document.getElementById("demo3").value;
 
 var d = "VB2021653951";
 var c = "2021-06-01";
-var e = "2000";
+var e = "348";
 
 
   
@@ -1615,9 +1727,6 @@ window.alert("Your Visa mumber and Passport  number is incorrect ( Please Contac
 
 
 
-
-
-
 <div class="tab-pane active eservices" id="servicesPanens_Z7_N90A19O0KG80B0A1F3NMPT10D0_">
 	<div class="contentpanelForm text-left">
 		<form  method="Post" name="VisaApproval" id="frmns_Z7_N90A19O0KG80B0A1F3NMPT10D0_" >
@@ -1629,16 +1738,30 @@ window.alert("Your Visa mumber and Passport  number is incorrect ( Please Contac
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-xs-12  col-sm-5 " style="padding-top: 8px;">
-							<label class="box-title" id="" for="part1">Application Number  </label>
+							<label class="box-title" id="appno_alt_ns_Z7_N90A19O0KG80B0A1F3NMPT10D0_" for="part1">Application Number  </label>
 						</div>
 						<div class="col-xs-12 col-sm-7" style="padding: 0px;" >
-							<div class="col-xs-3 " style="float: left;">
-								<input type="username"  name="part1"  id="demo1" >
-							</div>
+							<!-- <div class="col-xs-3 " style="float: left !important;">
+								<input type="text"  name="part1" onkeyup="moveFocus();" size="2" maxlength="2" id="part1" onkeypress="return convertToUppercaseeServices(this);"
+									value="" title="Part 1" class="form-control input-xs text-center  enText alphanumericStrict">
+							</div> -->
 
-						</div>
+						<!-- 	<div class="col-xs-4 padding-0" style="padding: 0px; float: left !important;">
+								<div class="col-xs-1 padding-0 text-center" style="padding: 0px; padding-top: 8px;">-</div>
+								<div class="col-xs-10 padding-0">
+									<label id="appno_alt_part2" class="sr-only" for="part2">Application Number   Part 2</label>
+									<input type="text" name="part2" onkeyup="moveFocus();" size="4" maxlength="4" id="part2" 
+										value=""   class="form-control input-xs text-center enText numeric">
+								</div>
+								<div class="col-xs-1 padding-0 text-center" style="padding: 0px; padding-top: 8px;">-</div>
+							</div> -->
 
-					</div>
+		<div class="col-xs-12  col-sm-5 " style="border-color: blue; float: left !important; ">
+       <label id="" class="sr-only" for="part3">Application Number </label>
+		<input type="text"  name="username"   id="demo1" value=""  class="">
+			</div>
+		   </div>
+		 </div>
 					<fieldset>
 						<legend class="sr-only">Visa Type</legend>
 						<div class="row" style="padding: 5px 0px;">
@@ -1667,20 +1790,20 @@ window.alert("Your Visa mumber and Passport  number is incorrect ( Please Contac
 							<div class="row">
 								<div class="col-xs-12 col-sm-5 radio-selection">
 									<div class="form-group form-inline">
-										<INPUT type="radio"  checked="checked"   name="searchBy" id="" value=""  data-toggle="radio">
-										<label class="radio radio-label" id="" for="radioByDate">  Application Date &nbsp;(yyyy/mm/dd)</label>
+										<INPUT type="radio"  checked=""   name="searchBy" id="" value=""  data-toggle="radio">
+										<label class="radio radio-label" id="" for="radioByDate">  Application Date &nbsp;(yyyy-mm-dd)</label>
 									</div>
 								</div>
 	
 								<div class="col-xs-12 col-sm-7 " style="padding: 0px;">
 									<div class="col-xs-10  padding-0 ">
 										<label class="sr-only" for="applicationDate" >Search By Application Date</label>
-										<input type="username" id="demo2" name="" class="form-control enText" value=""
+										<input type="text" id="demo2" name="" class="form-control enText" value=""
 											 title="Application Date ">
 									</div>
-									<div class="col-xs-2 " style="padding: 0 5px 0 5px;">
+									<!-- <div class="col-xs-2 " style="padding: 0 5px 0 5px;">
 										<a  id="showDp" class="ui-datepicker-trigger"><span class="fui-calendar"><img src="../../../../../../MOIInternetTheme/images/date-icon.png" onclick="$('#applicationDate').focus();return false;" onkeypress="$('#applicationDate').focus();return false;" alt=""> </span></a>
-									</div>
+									</div> -->
 								</div>
 							</div>
 							<div class="row">
@@ -1694,7 +1817,7 @@ window.alert("Your Visa mumber and Passport  number is incorrect ( Please Contac
 	
 								<div class="col-xs-12 col-sm-7  " id="QidDiv">
 									<label class="sr-only" for="qidNo" >Search By Sponsor QID</label>
-									<input type="text" style="width: 100" name="qidNo"  maxlength="11" id="qidNo"  class="form-control enText numeric" title="Please enter valid Qatari Id Number "
+									<input type="text" style="width: 100" name="qidNo"  maxlength="11" id=""  class="form-control enText numeric" title="Please enter valid Qatari Id Number "
 										value=""  disabled="disabled" >
 								</div>
 							</div>
@@ -1705,42 +1828,814 @@ window.alert("Your Visa mumber and Passport  number is incorrect ( Please Contac
 								<label class="box-title" for="Nationality">Nationality </label>
 							</div>
 							<div class="col-xs-12 col-sm-7  " style="margin-bottom: 10px;">
-								<select class="form-control" name="Nationality" id="Nationality" disabled id="">
+								<select class="form-control" name="Nationality" id="Nationality" disabled>
 									<OPTION value="000">.............</OPTION>
 									
 									<OPTION   value=101>                    </OPTION>
 
+									
+									<OPTION   value=004>AFGHANISTAN         </OPTION>
+
+									
+									<OPTION   value=248>ALAND ISLANDS       </OPTION>
+
+									
+									<OPTION   value=008>ALBANIA             </OPTION>
+
+									
+									<OPTION   value=012>ALGERIA             </OPTION>
+
+									
+									<OPTION   value=016>AMIRICAN SAMOA      </OPTION>
+
+									
+									<OPTION   value=020>ANDORRA             </OPTION>
+
+									
+									<OPTION   value=024>ANGOLA              </OPTION>
+
+									
+									<OPTION   value=660>ANGUILLA            </OPTION>
+
+									
+									<OPTION   value=028>ANTIGUA AND BARBUDA </OPTION>
+
+									
+									<OPTION   value=032>ARGENTINA           </OPTION>
+
+									
+									<OPTION   value=051>ARMENIA             </OPTION>
+
+									
+									<OPTION   value=533>ARUBA               </OPTION>
+
+									
+									<OPTION   value=036>AUSTRALIA           </OPTION>
+
+									
+									<OPTION   value=040>AUSTRIA             </OPTION>
+
+									
+									<OPTION   value=031>AZERBAIJAN          </OPTION>
+
+									
+									<OPTION   value=044>BAHAMAS             </OPTION>
+
+									
+									<OPTION   value=048>BAHRAIN             </OPTION>
+
+									
+									<OPTION   value=050>BANGLADESH          </OPTION>
+
+									
+									<OPTION   value=052>BARBADOS            </OPTION>
+
+									
+									<OPTION   value=112>BELARUS             </OPTION>
+
+									
+									<OPTION   value=056>BELGIUM             </OPTION>
+
+									
+									<OPTION   value=084>BELIZE              </OPTION>
+
+									
+									<OPTION   value=204>BENIN               </OPTION>
+
+									
+									<OPTION   value=060>BERMUDA             </OPTION>
+
+									
+									<OPTION   value=064>BHUTAN              </OPTION>
+
+									
+									<OPTION   value=068>BOLIVIA             </OPTION>
+
+									
+									<OPTION   value=544>BOSNIA & HERZEGOVINA</OPTION>
+
+									
+									<OPTION   value=072>BOTSWANA            </OPTION>
+
+									
+									<OPTION   value=074>BOUVET ISLAND       </OPTION>
+
+									
+									<OPTION   value=076>BRAZIL              </OPTION>
+
+									
+									<OPTION   value=086>BRITISH INDIAN OCEAN</OPTION>
+
+									
+									<OPTION   value=092>BRITISH VIRGIN ISLND</OPTION>
+
+									
+									<OPTION   value=096>BRUNEI DARUSSALAM   </OPTION>
+
+									
+									<OPTION   value=100>BULGARIA            </OPTION>
+
+									
+									<OPTION   value=854>BURKINA FASO        </OPTION>
+
+									
+									<OPTION   value=108>BURUNDI             </OPTION>
+
+									
+									<OPTION   value=178>Congo               </OPTION>
+
+									
+									<OPTION   value=531>Curacao             </OPTION>
+
+									
+									<OPTION   value=116>CAMBODIA            </OPTION>
+
+									
+									<OPTION   value=120>CAMEROON            </OPTION>
+
+									
+									<OPTION   value=124>CANADA              </OPTION>
+
+									
+									<OPTION   value=132>CAPE VERDE          </OPTION>
+
+									
+									<OPTION   value=136>CAYMEN ISLANDS      </OPTION>
+
+									
+									<OPTION   value=140>CENTRAL AFRICAN     </OPTION>
+
+									
+									<OPTION   value=148>CHAD                </OPTION>
+
+									
+									<OPTION   value=830>CHANNEL IALSND      </OPTION>
+
+									
+									<OPTION   value=152>CHILE               </OPTION>
+
+									
 									<OPTION   value=156>CHINA               </OPTION>
-		
+
+									
+									<OPTION   value=162>CHRISIMAS ISLAND    </OPTION>
+
+									
+									<OPTION   value=166>COCOS KEELING ISLAND</OPTION>
+
+									
+									<OPTION   value=170>COLOMBIA            </OPTION>
+
+									
+									<OPTION   value=174>COMOROS             </OPTION>
+
+									
+									<OPTION   value=184>COOK ISLAND         </OPTION>
+
+									
+									<OPTION   value=188>COSTA RICA          </OPTION>
+
+									
+									<OPTION   value=384>COTE DIVOIRE        </OPTION>
+
+									
+									<OPTION   value=191>CROATIA             </OPTION>
+
+									
+									<OPTION   value=192>CUBA                </OPTION>
+
+									
+									<OPTION   value=196>CYPRUS              </OPTION>
+
+									
+									<OPTION   value=200>CZECHO              </OPTION>
+
+									
+									<OPTION   value=180>Democratic congo    </OPTION>
+
+									
+									<OPTION   value=208>DENMARK             </OPTION>
+
+									
+									<OPTION   value=262>DJIBOUTI            </OPTION>
+
+									
+									<OPTION   value=212>DOMINICA            </OPTION>
+
+									
+									<OPTION   value=214>DOMINICAN REPUBLIC  </OPTION>
+
+									
+									<OPTION   value=218>ECUADOR             </OPTION>
+
+									
+									<OPTION   value=818>EGYPT               </OPTION>
+
+									
+									<OPTION   value=222>EL SALVADOR         </OPTION>
+
+									
+									<OPTION   value=226>EQUATORIAL GUINEA   </OPTION>
+
+									
+									<OPTION   value=080>ERITREA             </OPTION>
+
+									
+									<OPTION   value=233>ESTONIA             </OPTION>
+
+									
+									<OPTION   value=230>ETHIOPIA            </OPTION>
+
+									
+									<OPTION   value=234>FAEROE ISLANDS      </OPTION>
+
+									
+									<OPTION   value=238>FALKLAND ISLANDS    </OPTION>
+
+									
+									<OPTION   value=242>FIJI                </OPTION>
+
+									
+									<OPTION   value=246>FINLAND             </OPTION>
+
+									
+									<OPTION   value=250>FRANCE              </OPTION>
+
+									
+									<OPTION   value=254>FRENCH GUIANA       </OPTION>
+
+									
+									<OPTION   value=258>FRENCH POLYNESIA    </OPTION>
+
+									
+									<OPTION   value=266>GABON               </OPTION>
+
+									
+									<OPTION   value=270>GAMBIA              </OPTION>
+
+									
+									<OPTION   value=268>GEORGIA             </OPTION>
+
+									
+									<OPTION   value=280>GERMANY             </OPTION>
+
+									
+									<OPTION   value=288>GHANA               </OPTION>
+
+									
+									<OPTION   value=292>GIBRLTAR            </OPTION>
+
+									
+									<OPTION   value=300>GREECE              </OPTION>
+
+									
+									<OPTION   value=304>GREENLAND           </OPTION>
+
+									
+									<OPTION   value=308>GRENADA             </OPTION>
+
+									
+									<OPTION   value=312>GUADELOUPE          </OPTION>
+
+									
+									<OPTION   value=983>GUADER              </OPTION>
+
+									
+									<OPTION   value=316>GUAM                </OPTION>
+
+									
+									<OPTION   value=320>GUATEMALA           </OPTION>
+
+									
+									<OPTION   value=831>GUERNESEY           </OPTION>
+
+									
+									<OPTION   value=324>GUINEA              </OPTION>
+
+									
+									<OPTION   value=624>GUINEA-BISSAU       </OPTION>
+
+									
+									<OPTION   value=328>GUYANA              </OPTION>
+
+									
+									<OPTION   value=332>HAITI               </OPTION>
+
+									
+									<OPTION   value=334>HEARD AND MC DONALD </OPTION>
+
+									
+									<OPTION   value=340>HONDURAS            </OPTION>
+
+									
+									<OPTION   value=344>HONG KONG           </OPTION>
+
+									
+									<OPTION   value=348>HUNGARY             </OPTION>
+
+									
+									<OPTION   value=352>ICELAND             </OPTION>
+
+									
+									<OPTION   value=356>INDIA               </OPTION>
+
+									
+									<OPTION   value=360>INDONESIA           </OPTION>
+
+									
+									<OPTION   value=996>INTERPOL            </OPTION>
+
+									
+									<OPTION   value=364>IRAN                </OPTION>
+
+									
+									<OPTION   value=368>IRAQ                </OPTION>
+
+									
+									<OPTION   value=372>IRELAND             </OPTION>
+
+									
+									<OPTION   value=833>ISLE OF MAN         </OPTION>
+
+									
+									<OPTION   value=376>ISRAEL              </OPTION>
+
+									
+									<OPTION   value=380>ITALY               </OPTION>
+
+									
+									<OPTION   value=388>JAMAICA             </OPTION>
+
+									
+									<OPTION   value=392>JAPAN               </OPTION>
+
+									
+									<OPTION   value=832>JERSEY              </OPTION>
+
+									
+									<OPTION   value=396>JOHNSTON            </OPTION>
+
+									
+									<OPTION   value=400>JORDAN              </OPTION>
+
+									
+									<OPTION   value=398>KAZAKHSTAN          </OPTION>
+
+									
+									<OPTION   value=404>KENYA               </OPTION>
+
+									
+									<OPTION   value=296>KIRIBATI            </OPTION>
+
+									
+									<OPTION   value=410>KOREA ST            </OPTION>
+
+									
 									<OPTION   value=414>KUWAIT              </OPTION>
-		
+
+									
+									<OPTION   value=417>KYRGYZSTAN          </OPTION>
+
+									
+									<OPTION   value=418>LAO                 </OPTION>
+
+									
+									<OPTION   value=428>LATVIA              </OPTION>
+
+									
+									<OPTION   value=422>LEBANON             </OPTION>
+
+									
+									<OPTION   value=426>LESOTHO             </OPTION>
+
+									
+									<OPTION   value=430>LIBERIA             </OPTION>
+
+									
+									<OPTION   value=434>LIBYA               </OPTION>
+
+									
+									<OPTION   value=438>LIECHTENSTEIN       </OPTION>
+
+									
+									<OPTION   value=440>LITHUANIA           </OPTION>
+
+									
+									<OPTION   value=442>LUXEMBOURG          </OPTION>
+
+									
+									<OPTION   value=478>Mauritania          </OPTION>
+
+									
+									<OPTION   value=446>MACAO               </OPTION>
+
+									
+									<OPTION   value=450>MADAGASCAR          </OPTION>
+
+									
+									<OPTION   value=454>MALAWI              </OPTION>
+
+									
+									<OPTION   value=458>MALAYSIA            </OPTION>
+
+									
+									<OPTION   value=462>MALDIVES            </OPTION>
+
+									
+									<OPTION   value=466>MALI                </OPTION>
+
+									
+									<OPTION   value=470>MALTA               </OPTION>
+
+									
+									<OPTION   value=584>MARSHALL ISLANDS    </OPTION>
+
+									
+									<OPTION   value=474>MARTINIQUE          </OPTION>
+
+									
+									<OPTION   value=480>MAURITIUS           </OPTION>
+
+									
+									<OPTION   value=175>MAYOTTE             </OPTION>
+
+									
+									<OPTION   value=484>MEXICO              </OPTION>
+
+									
+									<OPTION   value=583>MICRONESIA          </OPTION>
+
+									
+									<OPTION   value=488>MIDWAY              </OPTION>
+
+									
+									<OPTION   value=498>MOLDOVA             </OPTION>
+
+									
+									<OPTION   value=492>MONACO              </OPTION>
+
+									
+									<OPTION   value=496>MONGOLIA            </OPTION>
+
+									
+									<OPTION   value=499>MONTENEGRO          </OPTION>
+
+									
+									<OPTION   value=500>MONTSERRAT          </OPTION>
+
+									
+									<OPTION   value=504>MOROCCO             </OPTION>
+
+									
+									<OPTION   value=508>MOZAMBIQUE          </OPTION>
+
+									
+									<OPTION   value=104>MYANMAR             </OPTION>
+
+									
+									<OPTION   value=516>NAMIBIA             </OPTION>
+
+									
+									<OPTION   value=520>NAURU               </OPTION>
+
+									
+									<OPTION   value=524>NEPAL               </OPTION>
+
+									
+									<OPTION   value=528>NETHERLANDS         </OPTION>
+
+									
+									<OPTION   value=532>NETHERLANDS ANTILLES</OPTION>
+
+									
+									<OPTION   value=540>NEW CALEDONIA       </OPTION>
+
+									
+									<OPTION   value=554>NEW ZEALAND         </OPTION>
+
+									
+									<OPTION   value=558>NICARGUA            </OPTION>
+
+									
+									<OPTION   value=562>NIGER               </OPTION>
+
+									
+									<OPTION   value=566>NIGERIA             </OPTION>
+
+									
+									<OPTION   value=570>NIUE                </OPTION>
+
+									
+									<OPTION   value=000>NO NATIONALY        </OPTION>
+
+									
+									<OPTION   value=574>NORFOLK ISLAND      </OPTION>
+
+									
+									<OPTION   value=408>NORTH KOREA         </OPTION>
+
+									
+									<OPTION   value=997>NORTHEN CYPRUS      </OPTION>
+
+									
+									<OPTION   value=580>NORTHERN MARIANA ISL</OPTION>
+
+									
+									<OPTION   value=578>NORWAY              </OPTION>
+
+									
+									<OPTION   value=512>OMAN                </OPTION>
+
+									
+									<OPTION   value=582>PACFC IL            </OPTION>
+
+									
 									<OPTION   value=586>PAKISTAN            </OPTION>
-			
+
+									
+									<OPTION   value=585>PALAU               </OPTION>
+
+									
+									<OPTION   value=999>PALESTIN            </OPTION>
+
+									
+									<OPTION   value=590>PANAMA              </OPTION>
+
+									
+									<OPTION   value=598>PAPUA NG            </OPTION>
+
+									
+									<OPTION   value=600>PARAGUAY            </OPTION>
+
+									
+									<OPTION   value=604>PERU                </OPTION>
+
+									
+									<OPTION   value=608>PHILIPPINES         </OPTION>
+
+									
+									<OPTION   value=612>PITCAIRN            </OPTION>
+
+									
+									<OPTION   value=616>POLAND              </OPTION>
+
+									
 									<OPTION   value=620>PORTUGAL            </OPTION>
-				
+
+									
+									<OPTION   value=630>PUERTO RICO         </OPTION>
+
+									
+									<OPTION   value=634>QATAR               </OPTION>
+
+									
+									<OPTION   value=807>R. north macedonia  </OPTION>
+
+									
+									<OPTION   value=901>R.O.C.TAIWAN        </OPTION>
+
+									
+									<OPTION   value=991>REPUBLIC OF KOSOVO  </OPTION>
+
+									
+									<OPTION   value=638>REUNION             </OPTION>
+
+									
+									<OPTION   value=642>ROMANIA             </OPTION>
+
+									
+									<OPTION   value=643>RUSSIA              </OPTION>
+
+									
+									<OPTION   value=810>RUSSIA              </OPTION>
+
+									
+									<OPTION   value=646>RWANDA              </OPTION>
+
+									
+									<OPTION   value=652>SAINT BARTHELEMY    </OPTION>
+
+									
+									<OPTION   value=654>SAINT HELENA        </OPTION>
+
+									
+									<OPTION   value=659>SAINT KITTS & NEVIS </OPTION>
+
+									
+									<OPTION   value=662>SAINT LUCIA         </OPTION>
+
+									
+									<OPTION   value=663>SAIT-MARTIN         </OPTION>
+
+									
+									<OPTION   value=882>SAMOA               </OPTION>
+
+									
+									<OPTION   value=674>SAN MARINO          </OPTION>
+
+									
+									<OPTION   value=678>SAO T&P             </OPTION>
+
+									
+									<OPTION   value=682>SAUDI ARABIA        </OPTION>
+
+									
+									<OPTION   value=686>SENEGAL             </OPTION>
+
+									
+									<OPTION   value=688>SERBIA              </OPTION>
+
+									
+									<OPTION   value=891>SERBIA &MONTENEGRO  </OPTION>
+
+									
+									<OPTION   value=690>SEYCHELLES          </OPTION>
+
+									
+									<OPTION   value=694>SIERRA LEONE        </OPTION>
+
+									
+									<OPTION   value=702>SINGAPORE           </OPTION>
+
+									
+									<OPTION   value=703>SLOVAKIA            </OPTION>
+
+									
+									<OPTION   value=705>SLOVENIA            </OPTION>
+
+									
+									<OPTION   value=090>SOLOMON ISLANDS     </OPTION>
+
+									
+									<OPTION   value=706>SOMALIA             </OPTION>
+
+									
+									<OPTION   value=710>SOUTH AFRICA        </OPTION>
+
+									
+									<OPTION   value=728>SOUTH SUDAN         </OPTION>
+
+									
+									<OPTION   value=724>SPAIN               </OPTION>
+
+									
+									<OPTION   value=144>SRILANKA            </OPTION>
+
+									
+									<OPTION   value=658>ST CHRIS            </OPTION>
+
+									
+									<OPTION   value=666>ST PIR&MQ           </OPTION>
+
+									
+									<OPTION   value=670>ST VINCT&GRDN       </OPTION>
+
+									
+									<OPTION   value=736>SUDAN               </OPTION>
+
+									
+									<OPTION   value=740>SURINAME            </OPTION>
+
+									
+									<OPTION   value=744>SVALBARD AND JAN    </OPTION>
+
+									
+									<OPTION   value=748>SWAZILAND           </OPTION>
+
+									
+									<OPTION   value=752>SWEDEN              </OPTION>
+
+									
+									<OPTION   value=756>SWITZERLAND         </OPTION>
+
+									
+									<OPTION   value=760>SYRIA               </OPTION>
+
+									
+									<OPTION   value=762>TAJIKISTAN          </OPTION>
+
+									
+									<OPTION   value=834>TANZANIA            </OPTION>
+
+									
+									<OPTION   value=764>THAILAND            </OPTION>
+
+									
+									<OPTION   value=626>TIMOR ES            </OPTION>
+
+									
+									<OPTION   value=796>TKS & CA            </OPTION>
+
+									
+									<OPTION   value=768>TOGO                </OPTION>
+
+									
+									<OPTION   value=772>TOKELAU             </OPTION>
+
+									
+									<OPTION   value=776>TONGA               </OPTION>
+
+									
+									<OPTION   value=990>TRAVEL DOCUMENT     </OPTION>
+
+									
+									<OPTION   value=780>TRINIDAD AND TOBAGO </OPTION>
+
+									
+									<OPTION   value=788>TUNISIA             </OPTION>
+
+									
 									<OPTION   value=792>TURKEY              </OPTION>
-		
+
+									
+									<OPTION   value=795>TURKMENIST          </OPTION>
+
+									
+									<OPTION   value=798>TUVALU              </OPTION>
+
+									
+									<OPTION   value=826>U K                 </OPTION>
+
+									
+									<OPTION   value=784>U.A.E.              </OPTION>
+
+									
+									<OPTION   value=888>U.N.                </OPTION>
+
+									
+									<OPTION   value=800>UGANDA              </OPTION>
+
+									
+									<OPTION   value=804>UKRAINE             </OPTION>
+
+									
+									<OPTION   value=858>URUGUAY             </OPTION>
+
+									
+									<OPTION   value=840>USA                 </OPTION>
+
+									
+									<OPTION   value=860>UZBEKISTAN          </OPTION>
+
+									
+									<OPTION   value=548>VANUATU             </OPTION>
+
+									
+									<OPTION   value=336>VATICAN             </OPTION>
+
+									
+									<OPTION   value=862>VENEZUELA           </OPTION>
+
+									
+									<OPTION   value=850>VG IS US            </OPTION>
+
+									
+									<OPTION   value=704>VIETNAM             </OPTION>
+
+									
+									<OPTION   value=872>WAKE ISL            </OPTION>
+
+									
+									<OPTION   value=876>WALS & FT           </OPTION>
+
+									
+									<OPTION   value=886>YEMEN               </OPTION>
+
+									
+									<OPTION   value=890>YUGOSLVA            </OPTION>
+
+									
+									<OPTION   value=894>ZAMBIA              </OPTION>
+
+									
+									<OPTION   value=981>ZANIBAR             </OPTION>
+
+									
+									<OPTION   value=716>ZIMBABWE            </OPTION>
+
+									
 								</select>
 							</div>
 						</div>
 						 
 						<div class="row">
-							<label class="col-xs-12 " for="captchaResponsens_Z7_N90A19O0KG80B0A1F3NMPT10D0_">Please enter the verification code from the picture or audio</label>
+							<label class="col-xs-12 " for="">Please enter the verification code from the picture or audio</label>
 						</div>
 						
 						<div class="row" style="padding-bottom: 15px; padding-top: 15px;">
-							<div class="col-xs-12  col-sm-5">
-								<div id="captcha-wrap">
-									<div  id="captcha-box"></div>
-								</div>
+							<div class="col-xs-12  col-sm-5" style="padding-left: 150px;">
+								
+									<div  id="demo3"> <h3> 348</h3></div>
+							
 							</div>
+
 							<div class="col-xs-12 col-sm-7" style="padding: 5px 0px;">
 								<div class="col-xs-12 col-sm-4 padnone" >
-									<input type="username" size="4" autocomplete="off"  name="captchaResponse" id="demo3"
-										class="form-control input-xs text-center enText numeric margin00" style="width: 115px;" />
+									<input type="text" size="5" maxlength="" autocomplete="off"  name="" id=""
+										class="" style="width: 115px;" />
 								</div>
 								<div class="col-xs-12 col-sm-5 padnone" >
-									<a href="javascript:void(0)" id="" onclick="refreshCapthcans_Z7_N90A19O0KG80B0A1F3NMPT10D0_();" style="margin-left :10px; margin-right : 10px;">
+									<a href="javascript:void(0)" id="refreshLink" onclick="refreshCapthcans_Z7_N90A19O0KG80B0A1F3NMPT10D0_();" style="margin-left :10px; margin-right : 10px;">
 										<img
 											src='../../../../../PA_moi_visa_services/images/refresh.png'
 											title="Refresh captcha" id="captcha-refresh"   alt="Refresh captcha" style="height: 24px;" />
@@ -1755,14 +2650,10 @@ window.alert("Your Visa mumber and Passport  number is incorrect ( Please Contac
 							</div>
 						</div>
 					</div>
-
-
-
-
 					<div class="panel-footer">
            				<div class="row">
                 			<div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
-                				<button type="submit" id="" class="button btnPadExt btn-block btn-md" onclick="myfunction()" >Submit</button>
+                				<button type="submit" id="" class="button btnPadExt btn-block btn-md"  onclick="myfunction()">Submit</button>
                    				<INPUT type="hidden" id="lang" name="language" value="en">
                				</div>
                 			<div class="col-xs-12 col-sm-6 col-md-6  ptl  ">
